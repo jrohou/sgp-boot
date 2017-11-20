@@ -31,7 +31,7 @@ public class CollaborateurController {
 		
 	}
 	
-	@GetMapping (path="/lister")
+	@GetMapping
 	public List<Collaborateur> listerCollaborateur() {
 		
 		return this.listeCollaborateur.findAll();
