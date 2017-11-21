@@ -36,8 +36,8 @@ public class CollaborateurController {
 		
 	}
 	
-	@PutMapping(value="/{id}")
-	public Collaborateur editCollaborateur(@RequestBody Collaborateur editCollaborateur, @PathVariable Integer id) {
+	@PutMapping
+	public Collaborateur editCollaborateur(@RequestBody Collaborateur editCollaborateur) {
 		return this.listeCollaborateur.save(editCollaborateur);
 	}
 

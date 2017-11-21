@@ -6,4 +6,5 @@ import dev.sgpboot.entite.Collaborateur;
 
 public interface CollaborateurRepository extends JpaRepository <Collaborateur, Integer>{
 
+	Collaborateur findById(Integer id);
 }
