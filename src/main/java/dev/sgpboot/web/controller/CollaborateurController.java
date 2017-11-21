@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import dev.sgpboot.entite.Collaborateur;
 import dev.sgpboot.repository.CollaborateurRepository;
-import dev.sgpboot.repository.DepartementRepository;
-import dev.sgpboot.repository.PosteRepository;
 
 @CrossOrigin(origins="*")
 @RestController
@@ -23,8 +21,6 @@ import dev.sgpboot.repository.PosteRepository;
 public class CollaborateurController {
 	
 	@Autowired CollaborateurRepository listeCollaborateur;
-	@Autowired DepartementRepository listeDepartement;
-	@Autowired PosteRepository listePoste;
 	
 	@PostMapping
 	public Collaborateur creerCollaborateur(@RequestBody Collaborateur collab) {
